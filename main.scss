@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@300;500;700&family=Josefin+Sans:wght@300;600&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Outfit&family=Overpass:wght@400;700&family=Poppins:wght@400;500;600;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+@import "variables";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Overpass', sans-serif;
+    background-color: $bg-dark;
+    display: flex;
+    justify-content: center;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding: 1.5rem;
+        width: 25rem;
+        
+
+        .section {
+            padding: 1rem;
+            background-color: $bg-ligth;
+            border-radius: 20px;
+
+            .column {
+                margin: .5rem;
+
+               img {
+                background-color:$bg-medium ;
+                padding: .8rem;
+                border-radius: 50%;
+                margin-bottom: 1rem;
+               }
+
+               h1 {
+                color: $color;
+                font-size: 1.6rem;
+                font-weight: 700;
+                margin-bottom: 1rem;
+               }
+
+               p{
+                color: $grey-color;
+                font-size: 15px;
+                margin-bottom: 1.5rem;
+               }
+            }
+
+            .button {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 2rem;
+
+                button {
+                    padding: 1rem;
+                    text-align: center;
+                    border-radius: 50%;
+                    border: none;
+                    font-size: 16px;
+                    background-color: $bg-medium;
+                    color: $grey-color;
+                    cursor: pointer;
+                    transition: .5s;
+                    font-weight: 700;
+
+                    &:hover {
+                        background-color: $grey-color;
+                        color: $bg-dark;
+                    }
+
+                }
+
+                #bes {
+                    &:hover {
+                        background-color: $btn-bg;
+                    }
+                }
+            }
+
+            .submit button{
+                background-color: $btn-bg;
+                padding: 1rem;
+                border-radius: 30px;
+                color: $color;
+                width: 100%;
+                border: none;
+                font-size: 16px;
+                letter-spacing: 2px;
+                font-weight: 700;
+                cursor: pointer;
+                transition: .5s;
+
+                &:hover {
+                    background-color: $color;
+                    color: $btn-bg;
+                }
+            }
+        }
+    }
+
+    .degis{
+        display: block;
+        margin-top: 9rem;
+
+    }
+
+    .thanks {
+        display: none;
+        margin-top: 9rem;
+
+        .thanks-sec {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            .thanks-img>img{
+                background-color: initial;
+                border-radius: initial;
+                width: 10rem;
+            }
+
+            .thanks-img>p {
+                color: $btn-bg;
+                background-color: $bg-medium;
+                padding: .5rem;
+                border-radius: 30px;
+                font-weight: 400;
+                font-size: 14px;
+                margin-bottom: .5rem;
+            }
+        }
+
+    }
+    
+   
+
+
+}
